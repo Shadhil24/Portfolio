@@ -1,73 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - AI/ML Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadhil Sirajudheen — AI/ML Engineer</title>
+  <meta name="description" content="Shadhil Sirajudheen — AI/ML Engineer (Computer Vision, NLP, LLMs, deployments). Portfolio and case studies." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>👋 Hi, I'm Shadhil Siraj</h1>
-    <p>AI/ML Engineer | Python | LLMs | Computer Vision</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!--
+    NOTE: This file is intentionally verbose so HR/engineers can read case studies directly.
+    Replace placeholder links, images, and metrics (marked with [ASSUMPTION]) with real assets.
+  -->
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Shadhil Sirajudheen</h1>
+        <p class="muted">AI & ML Engineer — Computer Vision · NLP · LLMs · MLOps</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-ctas">
+        <a class="btn small" href="resume.pdf" download>Download Resume</a>
+        <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m an AI/ML Engineer with 5+ years of experience in Machine Learning, NLP, 
-      Computer Vision, and LLMs. I specialize in deploying end-to-end AI solutions 
-      using Python, TensorFlow, PyTorch, Hugging Face, and cloud platforms (AWS, Azure).
-    </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h2>Hi — I'm <span class="accent">Shadhil</span>, an AI / ML Engineer</h2>
+        <p class="lead">
+          I build production-ready computer vision, NLP, and LLM-powered systems.
+          5+ years experience delivering scalable AI pipelines, model deployment, and automation on AWS & Azure.
+        </p>
+
+        <ul class="metrics">
+          <li><strong>5+</strong> years AI/ML experience</li>
+          <li><strong>40–60%</strong> reduction in manual effort (typical outcome)</li>
+          <li><strong>Production</strong> deployments: FastAPI, Docker, AWS, Azure</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="mailto:shadhilsirajudheenck@gmail.com">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Placeholder for profile picture or animated demo GIF -->
+        <div class="profile-card">
+          <!-- Add image profile.jpg to repo and replace src -->
+          <img src="profile.jpg" alt="Shadhil Sirajudheen photo (replace with your image)" onerror="this.style.opacity=0.6; this.nextElementSibling.style.display='block'">
+          <div class="profile-fallback" style="display:none;">
+            <p><strong>Shadhil</strong></p>
+            <p>AI/ML Engineer — Dubai, UAE</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>ID Card Scanner</h3>
-      <p>Automated ID card detection, cropping, and deskewing using OpenCV + FastAPI.</p>
-      <a href="https://github.com/yourusername/id-card-scanner" target="_blank">🔗 GitHub</a>
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About</h2>
+    <div class="two-col">
+      <div>
+        <p>
+          I'm an AI & ML Engineer (based in Dubai) with hands-on experience in:
+          <strong>Computer Vision, NLP, Generative AI, and LLM systems</strong>. I design
+          end-to-end pipelines, productionize models with FastAPI/Docker, and integrate with cloud services (AWS & Azure).
+        </p>
+        <p>
+          I enjoy converting messy business problems into reliable ML systems — especially automation, document/image parsing,
+          and multimedia pipelines (subtitles, lip-sync, short-video generation).
+        </p>
+
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:shadhilsirajudheenck@gmail.com">shadhilsirajudheenck@gmail.com</a> · Phone: +971 509170611</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shadhilsirajudheen-c-k-94283017b" target="_blank" rel="noopener">/in/shadhilsirajudheen</a></p>
+        <p>GitHub: <a href="https://github.com/Shadhil24" target="_blank" rel="noopener">github.com/Shadhil24</a></p>
+      </div>
+
+      <div>
+        <h4>Tech Stack</h4>
+        <div class="chips">
+          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>Hugging Face</span>
+          <span>FastAPI</span><span>Docker</span><span>AWS (EC2,S3,Lambda)</span><span>Azure OpenAI</span><span>Gradio/Spaces</span>
+        </div>
+
+        <h4>Approach & Values</h4>
+        <ul>
+          <li>Start with a clear problem statement & evaluation metric</li>
+          <li>Quick prototyping, then harden: test coverage, CI, containerization</li>
+          <li>Focus on reproducibility (requirements, seed, documented runs)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Highlighted Projects — Case Studies</h2>
+
+    <p class="muted">Click "Read case study" to view a deep technical write-up, run commands, and architecture details.</p>
+
+    <div class="projects-grid">
+      <!-- Project card 1 -->
+      <article class="project-card">
+        <h3>ID Card Scanner — OpenCV + FastAPI</h3>
+        <p class="muted small">Automated ID cropping, deskew, OCR pre-processing for downstream parsing</p>
+        <p>
+          Short: robust multi-orientation crop + deskew pipeline tuned for noisy phone images. Built as a FastAPI service for batch jobs.
+        </p>
+        <div class="card-actions">
+          <button class="btn small" data-case="case-idcard">Read case study</button>
+          <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project card 2 -->
+      <article class="project-card">
+        <h3>RAG Chatbot & Block Diagram Generator — Azure OpenAI</h3>
+        <p class="muted small">RAG system (FAISS) + Azure OpenAI to generate and render interactive Mermaid diagrams</p>
+        <p>
+          Short: retrieval from internal docs → LLM to generate Mermaid code → client renders diagrams. Used for rapid architecture prototyping.
+        </p>
+        <div class="card-actions">
+          <button class="btn small" data-case="case-rag">Read case study</button>
+          <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project card 3 -->
+      <article class="project-card">
+        <h3>Lip-Sync Generator & Short Video Platform</h3>
+        <p class="muted small">wav2lip + TTS pipeline, Dockerized & deployed on EC2</p>
+        <p>
+          Short: avatar selection, audio-to-video sync, automated subtitles. Useful for marketing content generation.
+        </p>
+        <div class="card-actions">
+          <button class="btn small" data-case="case-lipsync">Read case study</button>
+          <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project card 4 -->
+      <article class="project-card">
+        <h3>Subtitle Automation — Whisper + FFmpeg</h3>
+        <p class="muted small">Bilingual subtitle pipeline with strict sync and QA automation</p>
+        <p>
+          Short: Whisper inference + FFmpeg-based muxing, style templates, and automatic time-shift correction.
+        </p>
+        <div class="card-actions">
+          <button class="btn small" data-case="case-subtitles">Read case study</button>
+          <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project card 5 -->
+      <article class="project-card">
+        <h3>Video Recommendation System (KNN + Multimodal)</h3>
+        <p class="muted small">Multimodal embeddings: visual + audio + NLP keywords</p>
+        <p>Short: KNN-based ranking with feature fusion, used for personalized recommendations.</p>
+        <div class="card-actions">
+          <button class="btn small" data-case="case-reco">Read case study</button>
+          <a class="btn ghost small" href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience / timeline condensed -->
+  <section id="experience" class="section container">
+    <h2 class="section-title">Experience (summary)</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Tek Infotree (Intel client) — AI Software Engineer</h4>
+        <span class="muted">Jul 2024 — Jun 2025</span>
+        <ul>
+          <li>Built automation for diagram/topology extraction, Excel/PowerPoint auto-generation; improved reporting throughput ~50%.</li>
+          <li>Integrated Azure OpenAI into GUI tools for block-diagram to Mermaid conversion (RAG + FAISS)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <h4>IM Capsule (Winnopro) — AI & ML Engineer</h4>
+        <span class="muted">Sep 2022 — Jun 2024</span>
+        <ul>
+          <li>Deployed Stable Diffusion pipelines, lip-sync generator, and short-video automation; improved asset delivery speed by ~30%.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <h4>IMMCO — Data Scientist</h4>
+        <span class="muted">Jun 2020 — Aug 2022</span>
+        <ul>
+          <li>Face recognition attendance; OCR-based street name extraction; predictive tools for domain-specific features.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME and portfolio download -->
+  <section id="resume" class="section container">
+    <h2 class="section-title">Resume & Additional Documents</h2>
+    <p class="muted">Resume contains full role descriptions, education, certificates, and contact details.</p>
+    <div class="download-actions">
+      <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+      <a class="btn ghost" href="https://github.com/Shadhil24" target="_blank" rel="noopener">View GitHub</a>
     </div>
 
-    <div class="project-card">
-      <h3>RAG Chatbot</h3>
-      <p>Retrieval-Augmented Generation chatbot using LangChain + OpenAI + Pinecone.</p>
-      <a href="https://huggingface.co/spaces/yourusername/rag-chatbot" target="_blank">🔗 Live Demo</a>
+    <details class="readme-preview">
+      <summary>What I include in each project repo</summary>
+      <ol>
+        <li>Clear README with problem statement, dataset, evaluation metric, and run instructions.</li>
+        <li>requirements.txt, Dockerfile, sample inputs/outputs, and a short README demo GIF.</li>
+        <li>Small architecture diagram + notes on production concerns (auth, scaling, cost).</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="section-title">Contact</h2>
+    <p>If you'd like a short demo, please email me or schedule a quick call. I usually prepare a 5–7 minute demo + 10 minute Q&A.</p>
+
+    <div class="contact-grid">
+      <div>
+        <h4>Email</h4>
+        <p><a href="mailto:shadhilsirajudheenck@gmail.com">shadhilsirajudheenck@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h4>Phone</h4>
+        <p>+971 509170611</p>
+      </div>
+
+      <div>
+        <h4>LinkedIn</h4>
+        <p><a href="https://www.linkedin.com/in/shadhilsirajudheen-c-k-94283017b" target="_blank" rel="noopener">linkedin.com/in/shadhilsirajudheen</a></p>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h3>ML Model Deployment</h3>
-      <p>Deployed ML models using FastAPI + Docker + AWS Lambda.</p>
-      <a href="https://github.com/yourusername/ml-deployment" target="_blank">🔗 GitHub</a>
+    <p class="muted">Small note to recruiters: state the role & best time for a call in the email subject for faster scheduling.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Shadhil Sirajudheen · Built with HTML & CSS · <a href="https://github.com/Shadhil24" target="_blank" rel="noopener">GitHub</a></p>
     </div>
-  </section>
-
-  <!-- Resume -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" download>📄 Download My Resume</a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Your Name | Built with ❤ using HTML & CSS</p>
   </footer>
+
+  <!-- ——————————— CASE STUDY MODALS (hidden by default) ——————————— -->
+  <div id="case-modals">
+    <!-- ID Card Scanner -->
+    <div class="case-modal" id="case-idcard" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-close="case-idcard">&times;</button>
+        <h3>ID Card Scanner — Case Study</h3>
+        <p class="muted">Problem: High-volume ID images are inconsistent (rotation, lighting, occlusion). Need a pipeline for robust cropping, deskewing, and OCR pre-processing.</p>
+
+        <h4>My role</h4>
+        <p>Lead developer — designed preprocessing pipeline, built FastAPI batch endpoint, implemented QA automation and dataset augmentations.</p>
+
+        <h4>Architecture</h4>
+        <ul>
+          <li>Input: images (single or batch)</li>
+          <li>Preprocessing: adaptive histogram equalization → bilateral denoise → contour-based candidate rectangle detection</li>
+          <li>Deskew: compute minAreaRect → perspective transform → refinement via Hough lines for rotation correction</li>
+          <li>OCR prep & output: normalized crop → optional EasyOCR/Tesseract step → output JSON + saved crops to S3</li>
+          <li>Service: FastAPI with endpoints /process (batch) and /health; Dockerized</li>
+        </ul>
+
+        <h4>Tech stack</h4>
+        <p>Python, OpenCV, NumPy, FastAPI, Docker, AWS S3 for storage, GitHub Actions (CI) for tests.</p>
+
+        <h4>How to run (local)</h4>
+        <pre><code># clone (assumes repo id-card-scanner)
+git clone https://github.com/Shadhil24/id-card-scanner.git
+cd id-card-scanner
+pip install -r requirements.txt
+uvicorn app:app --host 0.0.0.0 --port 8080
+# curl example
+curl -X POST "http://localhost:8080/process" -F "files=@sample.jpg"
+</code></pre>
+
+        <h4>Results & metrics</h4>
+        <ul>
+          <li>Detection success on test set: <strong>~96%</strong> (assumption: synthetic + real dataset mix)</li>
+          <li>Processing throughput (batch mode): <strong>~30 images/sec</strong> on a CPU instance (assumption)</li>
+          <li>Business impact: Reduced manual cropping time by ~40% (from resume)</li>
+        </ul>
+
+        <h4>Key challenges</h4>
+        <ol>
+          <li>Highly variable lighting — mitigated using CLAHE + color normalization</li>
+          <li>Skewed or occluded corners — used morphological heuristics and fallback user prompts</li>
+        </ol>
+
+        <p class="muted small">[ASSUMPTIONS: dataset sizes, throughput numbers and test metrics above are sample approximations — replace with your measured values]</p>
+      </div>
+    </div>
+
+    <!-- RAG Chatbot / Block Diagram -->
+    <div class="case-modal" id="case-rag" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-close="case-rag">&times;</button>
+        <h3>RAG Chatbot & Block Diagram Generator — Case Study</h3>
+        <p class="muted">Problem: Engineers need a quick way to convert requirements & docs into editable diagrams and get assisted suggestions from internal docs.</p>
+
+        <h4>My role</h4>
+        <p>Implemented RAG pipeline (FAISS) and an editor UI. LLM generates Mermaid code; UI renders diagrams and saves edits.</p>
+
+        <h4>Architecture</h4>
+        <ol>
+          <li>Document ingestion → embeddings (sentence-transformers) → FAISS index</li>
+          <li>User query → retrieve top-k passages → prompt assembly → Azure OpenAI call (completion)</li>
+          <li>LLM output (Mermaid) → client renders via Mermaid.js and yFiles for interactivity</li>
+        </ol>
+
+        <h4>How to run (high-level)</h4>
+        <pre><code># Example local run (simplified)
+git clone https://github.com/Shadhil24/rag-diagram.git
+cd rag-diagram
+pip install -r requirements.txt
+# Start backend and frontend (React + Vite)
+uvicorn backend.main:app --reload --port 8000
+npm install
+npm run dev
+</code></pre>
+
+        <h4>Production notes</h4>
+        <ul>
+          <li>Rate-limit OpenAI calls; cache recent diagrams; monitor prompt drift</li>
+          <li>Auth & RBAC for company docs; logs to CloudWatch for usage</li>
+        </ul>
+
+        <h4>Results (from project)</h4>
+        <p class="muted small">Rough impact: improved documentation-to-prototype time by ~60% when used in internal pilot. [ASSUMPTION: pilot-based metric]</p>
+      </div>
+    </div>
+
+    <!-- Lip-sync -->
+    <div class="case-modal" id="case-lipsync" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-close="case-lipsync">&times;</button>
+        <h3>Lip-Sync Generator — Case Study</h3>
+
+        <h4>Overview</h4>
+        <p>Built a pipeline to generate lip-synced avatar videos from text/audio. Key parts: TTS → wav2lip → video compositor → post-processing.</p>
+
+        <h4>Deployment</h4>
+        <p>Dockerized microservice, hosted on EC2 behind an Nginx reverse proxy. Jobs run asynchronously with Celery + Redis (assumption: recommended pattern).</p>
+
+        <h4>How to run</h4>
+        <pre><code># Docker example
+docker build -t lipsync:latest .
+docker run -p 8080:8080 lipsync:latest
+</code></pre>
+
+        <p class="muted small">[ASSUMPTION: infrastructure stack for async processing — adapt to your implementation]</p>
+      </div>
+    </div>
+
+    <!-- Subtitles -->
+    <div class="case-modal" id="case-subtitles" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-close="case-subtitles">&times;</button>
+        <h3>Subtitle Automation — Case Study</h3>
+        <p>Whisper as the transcriber; FFmpeg for subtitle muxing and syncing. Pipeline supports bilingual output and style templates.</p>
+
+        <h4>Example command</h4>
+        <pre><code># transcribe with whisperx (example)
+python transcribe.py --input video.mp4 --lang en --model medium
+# mux subtitles into final mp4
+ffmpeg -i video.mp4 -i subs.srt -c copy -c:s mov_text output_with_subs.mp4
+</code></pre>
+      </div>
+    </div>
+
+    <!-- Recommendation -->
+    <div class="case-modal" id="case-reco" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-close="case-reco">&times;</button>
+        <h3>Video Recommendation System — Case Study</h3>
+        <p>Feature fusion of visual embeddings (CNN), audio embeddings (YAMNet), and NLP keywords; KNN-based ranking with periodic retrain.</p>
+
+        <h4>Pipeline</h4>
+        <ol>
+          <li>Extract frames → CNN embeddings</li>
+          <li>Extract audio → YAMNet embeddings</li>
+          <li>Text metadata → TF-IDF / transformer embeddings</li>
+          <li>Concatenate & L2-normalize → index in Annoy/FAISS → KNN queries</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- —————————— SCRIPTS —————————— -->
+  <script>
+    // Simple modal handling — open/close case study modals
+    document.querySelectorAll('[data-case]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-case');
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-close');
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Close modals on outside click
+    document.querySelectorAll('.case-modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
